@@ -1,2 +1,3 @@
 # coulterc-code.github.io
-your personal website
+
+This is my personal GitHub Pages site.
