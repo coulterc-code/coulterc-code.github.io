@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Website",
+    "section": "",
+    "text": "Hello, World!\nWelcome to my Quarto website.\n\n🚀 Built with Quarto\n📄 Hosted on GitHub Pages\n✨ Customized by me"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Connor. This site is built with Quarto and deployed with GitHub Pages."
+  }
+]
