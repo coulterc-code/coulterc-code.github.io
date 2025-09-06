@@ -1,0 +1,12 @@
+---
+title: "Welcome to My Website"
+author: "Connor Coulter"
+date: "2025-09-05"
+---
+
+# Hello, World!
+Welcome to my Quarto website.
+
+- 🚀 Built with Quarto
+- 📄 Hosted on GitHub Pages
+- ✨ Customized by me

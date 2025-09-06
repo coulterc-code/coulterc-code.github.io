@@ -1,14 +1,11 @@
 name: Quarto Publish
-
 on:
   push:
     branches: [ main ]
-
 permissions:
   contents: write
   pages: write
   id-token: write
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -17,25 +14,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      # Optional Python (safe to keep even if you have no requirements.txt)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: Install Python dependencies (if requirements.txt exists)
         if: hashFiles('requirements.txt') != ''
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
       - name: Render site
         run: quarto render
-
       - name: Publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
