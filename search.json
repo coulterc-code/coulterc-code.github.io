@@ -11,6 +11,6 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hi, I’m Connor. This site is built with Quarto and deployed with GitHub Pages."
+    "text": "Hi, I’m Connor. This site is built with Quarto and deployed with GitHub Actions to GitHub Pages."
   }
 ]
