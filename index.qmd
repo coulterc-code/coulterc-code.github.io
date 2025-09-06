@@ -10,3 +10,4 @@ Welcome to my Quarto website.
 - 🚀 Built with Quarto
 - 📄 Hosted on GitHub Pages
 - ✨ Customized by me
+- ✅ Deployed with Actions
