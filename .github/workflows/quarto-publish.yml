@@ -21,7 +21,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # Optional Python (skip if no requirements.txt)
+      # Optional Python (safe to keep even if you have no requirements.txt)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
