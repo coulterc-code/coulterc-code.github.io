@@ -5,9 +5,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: write   # needed to push to gh-pages
 
 jobs:
   build-deploy:
@@ -25,16 +23,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: 'requirements.txt'
 
-      - name: Install Python dependencies (if requirements.txt exists)
+      - name: Install Python dependencies (skip if none)
         if: hashFiles('requirements.txt') != ''
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Render and Publish to gh-pages
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
