@@ -1,0 +1,10 @@
+---
+title: "Projects"
+---
+
+## Current Work
+- **Cool Thing 1** — one-liner about it
+- **Cool Thing 2** — one-liner about it
+
+## Past Work
+- **Older Thing** — short note + link

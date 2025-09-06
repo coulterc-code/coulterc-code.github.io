@@ -2,6 +2,12 @@ project:
   type: website
 
 website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - projects.qmd
   title: "Connor Coulter"
   navbar:
     left:
