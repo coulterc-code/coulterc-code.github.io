@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-Hi, I'm Connor. This site is built with **Quarto** and deployed with **GitHub Pages**.
+Hi, I'm Connor. This site is built with **Quarto** and deployed with **GitHub Actions** to **GitHub Pages**.
