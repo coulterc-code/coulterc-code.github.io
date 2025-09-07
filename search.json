@@ -32,7 +32,7 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Hello!\nThis page renders a small Python DataFrame from EC2.\nimport pandas as pd import numpy as np\ndf = pd.DataFrame(np.random.randn(5, 3), columns=list(“ABC”)) df"
+    "text": "Welcome\nThis is my Quarto site. See the About page for a Python example."
   },
   {
     "objectID": "Assignment01/~$stem_info.html",
