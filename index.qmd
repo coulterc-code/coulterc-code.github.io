@@ -1,13 +1,16 @@
 ---
-title: "Welcome to My Website"
-author: "Connor Coulter"
-date: "2025-09-05"
+title: "Welcome"
+format: html
 ---
 
-# Hello, World!
-Welcome to my Quarto website.
+# Hello!
 
-- 🚀 Built with Quarto
-- 📄 Hosted on GitHub Pages
-- ✨ Customized by me
-- ✅ Deployed with Actions
+This page renders a small Python DataFrame from EC2.
+
+```{python}
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(5, 3), columns=list("ABC"))
+df
+

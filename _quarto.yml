@@ -1,21 +1,15 @@
 project:
   type: website
-
+  output-dir: _site
 website:
+  title: "Connor's Quarto Site"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - projects.qmd
-  title: "Connor Coulter"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+      - href: about.qmd
+        text: About
 format:
   html:
-    theme: journal
+    theme: cosmo
     toc: true
