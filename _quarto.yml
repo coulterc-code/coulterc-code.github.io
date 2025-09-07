@@ -1,15 +1,24 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
+
 website:
   title: "Connor's Quarto Site"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+      - text: Home
+        href: index.qmd
+      - about.qmd
+
 format:
   html:
     theme: cosmo
-    toc: true
+
+jupyter: python3
+execute:
+  eval: true
+  echo: false
+  warning: false
+  message: false
+  cache: false
+
