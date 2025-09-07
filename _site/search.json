@@ -33,5 +33,12 @@
     "title": "Welcome",
     "section": "",
     "text": "Hello!\nThis page renders a small Python DataFrame from EC2.\nimport pandas as pd import numpy as np\ndf = pd.DataFrame(np.random.randn(5, 3), columns=list(“ABC”)) df"
+  },
+  {
+    "objectID": "Assignment01/~$stem_info.html",
+    "href": "Assignment01/~$stem_info.html",
+    "title": "Connor's Quarto Site",
+    "section": "",
+    "text": "\u000eConnor Coulter\u000eConnor Coulter"
   }
 ]
