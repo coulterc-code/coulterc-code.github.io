@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Website",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Hello, World!\nWelcome to my Quarto website.\n\n🚀 Built with Quarto\n📄 Hosted on GitHub Pages\n✨ Customized by me\n✅ Deployed with Actions"
+    "text": "Cool Thing 1 — one-liner about it\nCool Thing 2 — one-liner about it"
+  },
+  {
+    "objectID": "projects.html#current-work",
+    "href": "projects.html#current-work",
+    "title": "Projects",
+    "section": "",
+    "text": "Cool Thing 1 — one-liner about it\nCool Thing 2 — one-liner about it"
+  },
+  {
+    "objectID": "projects.html#past-work",
+    "href": "projects.html#past-work",
+    "title": "Projects",
+    "section": "Past Work",
+    "text": "Past Work\n\nOlder Thing — short note + link"
   },
   {
     "objectID": "about.html",
@@ -12,5 +26,12 @@
     "title": "About",
     "section": "",
     "text": "Hi, I’m Connor. This site is built with Quarto and deployed with GitHub Actions to GitHub Pages."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Hello!\nThis page renders a small Python DataFrame from EC2.\nimport pandas as pd import numpy as np\ndf = pd.DataFrame(np.random.randn(5, 3), columns=list(“ABC”)) df"
   }
 ]
