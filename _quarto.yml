@@ -6,19 +6,19 @@ website:
   title: "Connor's Quarto Site"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - text: "Assignments"
-        menu:
-          - href: Assignment01/system_info.qmd
-            text: Assignment 01
-          - href: Assignment02/assignment2.qmd
-            text: Assignment 02
+      - text: Home
+        href: index.qmd
+      - about.qmd
 
 format:
   html:
     theme: cosmo
-    toc: true
-  docx: default
 
 jupyter: python3
+execute:
+  eval: true
+  echo: false
+  warning: false
+  message: false
+  cache: false
+

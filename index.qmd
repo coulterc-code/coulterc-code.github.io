@@ -1,13 +1,9 @@
 ---
-title: "Welcome to My Website"
-author: "Connor Coulter"
-date: "2025-09-05"
+title: "Welcome"
+format: html
 ---
 
-# Hello, World!
-Welcome to my Quarto website.
+# Welcome
 
-- 🚀 Built with Quarto
-- 📄 Hosted on GitHub Pages
-- ✨ Customized by me
-- ✅ Deployed with Actions
+This is my Quarto site. See the **About** page for a Python example.
+
