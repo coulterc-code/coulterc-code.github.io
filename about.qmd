@@ -1,5 +1,7 @@
 ---
 title: "About"
+format: html
 ---
 
-Hi, I'm Connor. This site is built with **Quarto** and deployed with **GitHub Actions** to **GitHub Pages**.
+This page renders a basic plot using matplotlib.
+

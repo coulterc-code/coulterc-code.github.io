@@ -211,3 +211,6 @@ __marimo__/
 
 venv/
 .DS_Store
+
+lightcast_job_postings.csv
+*.csv

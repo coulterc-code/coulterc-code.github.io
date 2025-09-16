@@ -1,0 +1,81 @@
+---
+title: "About"
+format: html
+---
+
+This page renders a basic plot using matplotlib.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 2*np.pi, 200)
+y = np.sin(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.title("Sine Wave")
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.show()
+---
+title: "About"
+format: html
+---
+
+This page renders a basic plot using matplotlib.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 2*np.pi, 200)
+y = np.sin(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.title("Sine Wave")
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.show()
+---
+title: "About"
+format: html
+---
+
+This page renders a basic plot using matplotlib.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 2*np.pi, 200)
+y = np.sin(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.title("Sine Wave")
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.show()
+c---
+title: "About"
+format: html
+---
+
+This page renders a basic plot using matplotlib.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 2*np.pi, 200)
+y = np.sin(x)
+
+plt.figure()
+plt.plot(x, y)
+plt.title("Sine Wave")
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.show()
+
