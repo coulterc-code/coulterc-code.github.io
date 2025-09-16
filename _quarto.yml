@@ -1,24 +1,30 @@
+
 project:
   type: website
   output-dir: docs
 
 website:
-  title: "Connor's Quarto Site"
+  title: "Connor Coulter"
   navbar:
     left:
-      - text: Home
-        href: index.qmd
-      - about.qmd
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: Assignments
+        menu:
+          - text: Assignment 01
+            href: Assignment01/system_info.qmd
+          - text: Assignment 02
+            href: Assignment02/assignment2.qmd
 
 format:
   html:
     theme: cosmo
 
-jupyter: python3
 execute:
-  eval: true
-  echo: false
+  freeze: auto
+  echo: true
   warning: false
-  message: false
-  cache: false
 
+jupyter: python3
