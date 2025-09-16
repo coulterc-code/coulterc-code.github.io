@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Connor Coulter">
 
-<title>stem_info – Connor's Quarto Site</title>
+<title>Assignment 02 – Connor’s Quarto Site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -110,16 +111,59 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#system-python-environment" id="toc-system-python-environment" class="nav-link" data-scroll-target="#system-python-environment">System &amp; Python Environment</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="assignment2.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assignment 02</h1>
+<p class="subtitle lead">Environment Proof, Basic Analysis &amp; Plot</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>Connor CoulterConnor Coulter</p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Connor Coulter </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This document confirms environment details and runs a tiny analysis with a reproducible plot.</p>
+<section id="system-python-environment" class="level3">
+<h3 class="anchored" data-anchor-id="system-python-environment">System &amp; Python Environment</h3>
+<p>import platform, sys, os, subprocess print(“OS:”, platform.system(), platform.release()) print(“Machine:”, platform.machine()) print(“Processor:”, platform.processor()) print(“Python:”, sys.version.split()[0]) print(“Working Dir:”, os.getcwd())</p>
+<p>try: out = subprocess.check_output([sys.executable, “-m”, “pip”, “list”], text=True) print(“packages (first 15):”) print(“”.join(out.splitlines()[:17])) except Exception as e: print(“pip list unavailable:”, e) try: import psutil vm = psutil.virtual_memory() print(“Total RAM (GB):”, round(vm.total/1024<strong>3, 2)) print(“Available RAM (GB):”, round(vm.available/1024</strong>3, 2)) print(“CPU Count (logical):”, psutil.cpu_count(logical=True)) except ImportError: print(“psutil not installed; skipping.”) import pandas as pd import numpy as np rng = pd.date_range(“2025-01-01”, periods=30, freq=“D”) df = pd.DataFrame({ “date”: rng, “value”: np.linspace(10, 25, 30) + np.random.default_rng(42).normal(0, 1.2, 30) }) df.head(10) df.describe(numeric_only=True) import matplotlib.pyplot as plt</p>
+<p>plt.figure() plt.plot(df[“date”], df[“value”]) plt.title(“Assignment 02 — Example Time Series”) plt.xlabel(“Date”) plt.ylabel(“Value”) plt.xticks(rotation=45) plt.tight_layout() plt.show()</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

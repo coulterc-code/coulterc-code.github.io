@@ -25,14 +25,28 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hi, I’m Connor. This site is built with Quarto and deployed with GitHub Actions to GitHub Pages."
+    "text": "This page renders a basic plot using matplotlib."
+  },
+  {
+    "objectID": "Assignment02/assignment2.html",
+    "href": "Assignment02/assignment2.html",
+    "title": "Assignment 02",
+    "section": "",
+    "text": "This document confirms environment details and runs a tiny analysis with a reproducible plot.\n\n\nimport platform, sys, os, subprocess print(“OS:”, platform.system(), platform.release()) print(“Machine:”, platform.machine()) print(“Processor:”, platform.processor()) print(“Python:”, sys.version.split()[0]) print(“Working Dir:”, os.getcwd())\ntry: out = subprocess.check_output([sys.executable, “-m”, “pip”, “list”], text=True) print(“packages (first 15):”) print(“”.join(out.splitlines()[:17])) except Exception as e: print(“pip list unavailable:”, e) try: import psutil vm = psutil.virtual_memory() print(“Total RAM (GB):”, round(vm.total/10243, 2)) print(“Available RAM (GB):”, round(vm.available/10243, 2)) print(“CPU Count (logical):”, psutil.cpu_count(logical=True)) except ImportError: print(“psutil not installed; skipping.”) import pandas as pd import numpy as np rng = pd.date_range(“2025-01-01”, periods=30, freq=“D”) df = pd.DataFrame({ “date”: rng, “value”: np.linspace(10, 25, 30) + np.random.default_rng(42).normal(0, 1.2, 30) }) df.head(10) df.describe(numeric_only=True) import matplotlib.pyplot as plt\nplt.figure() plt.plot(df[“date”], df[“value”]) plt.title(“Assignment 02 — Example Time Series”) plt.xlabel(“Date”) plt.ylabel(“Value”) plt.xticks(rotation=45) plt.tight_layout() plt.show()"
+  },
+  {
+    "objectID": "Assignment02/assignment2.html#overview",
+    "href": "Assignment02/assignment2.html#overview",
+    "title": "Assignment 02",
+    "section": "",
+    "text": "This document confirms environment details and runs a tiny analysis with a reproducible plot.\n\n\nimport platform, sys, os, subprocess print(“OS:”, platform.system(), platform.release()) print(“Machine:”, platform.machine()) print(“Processor:”, platform.processor()) print(“Python:”, sys.version.split()[0]) print(“Working Dir:”, os.getcwd())\ntry: out = subprocess.check_output([sys.executable, “-m”, “pip”, “list”], text=True) print(“packages (first 15):”) print(“”.join(out.splitlines()[:17])) except Exception as e: print(“pip list unavailable:”, e) try: import psutil vm = psutil.virtual_memory() print(“Total RAM (GB):”, round(vm.total/10243, 2)) print(“Available RAM (GB):”, round(vm.available/10243, 2)) print(“CPU Count (logical):”, psutil.cpu_count(logical=True)) except ImportError: print(“psutil not installed; skipping.”) import pandas as pd import numpy as np rng = pd.date_range(“2025-01-01”, periods=30, freq=“D”) df = pd.DataFrame({ “date”: rng, “value”: np.linspace(10, 25, 30) + np.random.default_rng(42).normal(0, 1.2, 30) }) df.head(10) df.describe(numeric_only=True) import matplotlib.pyplot as plt\nplt.figure() plt.plot(df[“date”], df[“value”]) plt.title(“Assignment 02 — Example Time Series”) plt.xlabel(“Date”) plt.ylabel(“Value”) plt.xticks(rotation=45) plt.tight_layout() plt.show()"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome\nThis is my Quarto site. See the About page for a Python example."
+    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream # Welcome\n\nThis is my Quarto site. See the About page for a Python example.\n\n\nHello!\nThis page renders a small Python DataFrame from EC2.\nimport pandas as pd import numpy as np df = pd.DataFrame(np.random.randn(5, 3), columns=list(“ABC”)) df &gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes"
   },
   {
     "objectID": "Assignment01/~$stem_info.html",
