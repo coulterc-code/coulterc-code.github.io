@@ -1,0 +1,12 @@
+{
+  "hash": "6b1a67234cb2693ebf481ae1182938d4",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Assignment 03 – Big Data Visualization on Scale\"\nauthor: \"Connor Coulter\"\nformat:\n  html:\n    toc: true\n    theme: cosmo\njupyter: python3\nexecute:\n  echo: true\n  warning: false\n  error: false\n---\n\n## Load Dataset\n\nfrom pyspark.sql import SparkSession, functions as F\n\nspark = SparkSession.builder.appName(\"LightcastData-A3\").getOrCreate()\n\ndf = (spark.read\n      .option(\"header\", True)\n      .option(\"inferSchema\", True)\n      .option(\"multiLine\", True)\n      .option(\"escape\", \"\\\"\")\n      .csv(\"Assignment03/data/lightcast_job_postings.csv\"))\n\nprint(\"Rows:\", df.count(), \"Columns:\", len(df.columns))\ndf.printSchema()\ndf.show(5, truncate=80)\n\n",
+    "supporting": [
+      "assignment03_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

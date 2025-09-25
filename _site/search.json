@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "Assignment03/assignment03.html",
+    "href": "Assignment03/assignment03.html",
+    "title": "Assignment 03 – Big Data Visualization on Scale",
+    "section": "",
+    "text": "from pyspark.sql import SparkSession, functions as F\nspark = SparkSession.builder.appName(“LightcastData-A3”).getOrCreate()\ndf = (spark.read .option(“header”, True) .option(“inferSchema”, True) .option(“multiLine”, True) .option(“escape”, “\"”) .csv(“Assignment03/data/lightcast_job_postings.csv”))\nprint(“Rows:”, df.count(), “Columns:”, len(df.columns)) df.printSchema() df.show(5, truncate=80)"
+  },
+  {
+    "objectID": "Assignment03/assignment03.html#load-dataset",
+    "href": "Assignment03/assignment03.html#load-dataset",
+    "title": "Assignment 03 – Big Data Visualization on Scale",
+    "section": "",
+    "text": "from pyspark.sql import SparkSession, functions as F\nspark = SparkSession.builder.appName(“LightcastData-A3”).getOrCreate()\ndf = (spark.read .option(“header”, True) .option(“inferSchema”, True) .option(“multiLine”, True) .option(“escape”, “\"”) .csv(“Assignment03/data/lightcast_job_postings.csv”))\nprint(“Rows:”, df.count(), “Columns:”, len(df.columns)) df.printSchema() df.show(5, truncate=80)"
+  }
+]

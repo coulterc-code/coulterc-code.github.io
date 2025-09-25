@@ -1,0 +1,31 @@
+---
+title: "Assignment 03 – Big Data Visualization on Scale"
+author: "Connor Coulter"
+format:
+  html:
+    toc: true
+    theme: cosmo
+jupyter: python3
+execute:
+  echo: true
+  warning: false
+  error: false
+---
+
+## Load Dataset
+
+```{python}
+from pyspark.sql import SparkSession, functions as F
+
+spark = SparkSession.builder.appName("LightcastData-A3").getOrCreate()
+
+df = (spark.read
+      .option("header", True)
+      .option("inferSchema", True)
+      .option("multiLine", True)
+      .option("escape", "\"")
+      .csv("Assignment03/data/lightcast_job_postings.csv"))
+
+print("Rows:", df.count(), "Columns:", len(df.columns))
+df.printSchema()
+df.show(5, truncate=80)
