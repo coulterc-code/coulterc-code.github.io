@@ -1,0 +1,105 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Cool Thing 1 — one-liner about it\nCool Thing 2 — one-liner about it"
+  },
+  {
+    "objectID": "projects.html#current-work",
+    "href": "projects.html#current-work",
+    "title": "Projects",
+    "section": "",
+    "text": "Cool Thing 1 — one-liner about it\nCool Thing 2 — one-liner about it"
+  },
+  {
+    "objectID": "projects.html#past-work",
+    "href": "projects.html#past-work",
+    "title": "Projects",
+    "section": "Past Work",
+    "text": "Past Work\n\nOlder Thing — short note + link"
+  },
+  {
+    "objectID": "Assignment03/assignment03.html",
+    "href": "Assignment03/assignment03.html",
+    "title": "Assignment 03 – Big Data Visualization on Scale",
+    "section": "",
+    "text": "from pyspark.sql import SparkSession, functions as F\nspark = SparkSession.builder.appName(“LightcastData-A3”).getOrCreate()\ndf = (spark.read .option(“header”, True) .option(“inferSchema”, True) .option(“multiLine”, True) .option(“escape”, “\"”) .csv(“Assignment03/data/lightcast_job_postings.csv”))\nprint(“Rows:”, df.count(), “Columns:”, len(df.columns)) df.printSchema() df.show(5, truncate=80)",
+    "crumbs": [
+      "Assignments",
+      "Assignment 03"
+    ]
+  },
+  {
+    "objectID": "Assignment03/assignment03.html#load-dataset",
+    "href": "Assignment03/assignment03.html#load-dataset",
+    "title": "Assignment 03 – Big Data Visualization on Scale",
+    "section": "",
+    "text": "from pyspark.sql import SparkSession, functions as F\nspark = SparkSession.builder.appName(“LightcastData-A3”).getOrCreate()\ndf = (spark.read .option(“header”, True) .option(“inferSchema”, True) .option(“multiLine”, True) .option(“escape”, “\"”) .csv(“Assignment03/data/lightcast_job_postings.csv”))\nprint(“Rows:”, df.count(), “Columns:”, len(df.columns)) df.printSchema() df.show(5, truncate=80)",
+    "crumbs": [
+      "Assignments",
+      "Assignment 03"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream # Welcome\n\nThis is my Quarto site. See the About page for a Python example.\n\n\nHello!\nThis page renders a small Python DataFrame from EC2.\nimport pandas as pd import numpy as np df = pd.DataFrame(np.random.randn(5, 3), columns=list(“ABC”)) df &gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This page renders a basic plot using matplotlib.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "Assignment02/assignment2.html",
+    "href": "Assignment02/assignment2.html",
+    "title": "Assignment 02 — Environment & PySpark Verification",
+    "section": "",
+    "text": "import sys, platform\nimport pandas as pd, numpy as np\nimport sklearn, matplotlib\nprint(\"Python:\", sys.version.split()[0])\nprint(\"OS:\", platform.system(), platform.release())\nprint(\"pandas:\", pd.__version__)\nprint(\"numpy:\", np.__version__)\nprint(\"scikit-learn:\", sklearn.__version__)\nprint(\"matplotlib:\", matplotlib.__version__)\n\nPython: 3.12.3\nOS: Linux 6.14.0-1011-aws\npandas: 2.3.2\nnumpy: 2.3.2\nscikit-learn: 1.7.1\nmatplotlib: 3.10.6",
+    "crumbs": [
+      "Assignments",
+      "Assignment 02"
+    ]
+  },
+  {
+    "objectID": "Assignment02/assignment2.html#python-package-versions",
+    "href": "Assignment02/assignment2.html#python-package-versions",
+    "title": "Assignment 02 — Environment & PySpark Verification",
+    "section": "",
+    "text": "import sys, platform\nimport pandas as pd, numpy as np\nimport sklearn, matplotlib\nprint(\"Python:\", sys.version.split()[0])\nprint(\"OS:\", platform.system(), platform.release())\nprint(\"pandas:\", pd.__version__)\nprint(\"numpy:\", np.__version__)\nprint(\"scikit-learn:\", sklearn.__version__)\nprint(\"matplotlib:\", matplotlib.__version__)\n\nPython: 3.12.3\nOS: Linux 6.14.0-1011-aws\npandas: 2.3.2\nnumpy: 2.3.2\nscikit-learn: 1.7.1\nmatplotlib: 3.10.6",
+    "crumbs": [
+      "Assignments",
+      "Assignment 02"
+    ]
+  },
+  {
+    "objectID": "Assignment02/assignment2.html#pyspark-sanity-check",
+    "href": "Assignment02/assignment2.html#pyspark-sanity-check",
+    "title": "Assignment 02 — Environment & PySpark Verification",
+    "section": "PySpark Sanity Check",
+    "text": "PySpark Sanity Check\n\nimport pyspark\nfrom pyspark.sql import SparkSession\nprint(\"PySpark:\", pyspark.__version__)\n\nspark = SparkSession.builder.appName(\"assignment02-check\").getOrCreate()\n\ndf = spark.createDataFrame(\n    [(1, \"alpha\", 3.5),\n     (2, \"beta\",  7.2),\n     (3, \"gamma\", 1.1)],\n    [\"id\", \"label\", \"score\"]\n)\n\ndf.show()\nprint(\"Row count:\", df.count())\n\nfrom pyspark.sql import functions as F, Window\nw = Window.rowsBetween(Window.unboundedPreceding, Window.unboundedFollowing)\ndf2 = df.withColumn(\"score_z\", (F.col(\"score\") - F.avg(\"score\").over(w)) / F.stddev(F.col(\"score\")).over(w))\ndf2.show()\n\nspark.stop()\n\nPySpark: 4.0.1\n\n\nWARNING: Using incubator modules: jdk.incubator.vector\nUsing Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n25/09/25 00:51:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n[Stage 0:&gt;                                                          (0 + 1) / 1]                                                                                \n\n\n+---+-----+-----+\n| id|label|score|\n+---+-----+-----+\n|  1|alpha|  3.5|\n|  2| beta|  7.2|\n|  3|gamma|  1.1|\n+---+-----+-----+\n\nRow count: 3\n\n\n25/09/25 00:51:30 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.\n25/09/25 00:51:30 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.\n25/09/25 00:51:30 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.\n25/09/25 00:51:31 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.\n25/09/25 00:51:31 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.\n\n\n+---+-----+-----+--------------------+\n| id|label|score|             score_z|\n+---+-----+-----+--------------------+\n|  1|alpha|  3.5|-0.14101309271391477|\n|  2| beta|  7.2|  1.0630217758433582|\n|  3|gamma|  1.1| -0.9220086831294432|\n+---+-----+-----+--------------------+\n\n\n\n(3, “gamma”, 1.1)], [“id”, “label”, “score”] )\ndf.show() print(“Row count:”, df.count())\nfrom pyspark.sql import functions as F, Window w = Window.rowsBetween(Window.unboundedPreceding, Window.unboundedFollowing) df2 = df.withColumn(“score_z”, (F.col(“score”) - F.avg(“score”).over(w)) / F.stddev(F.col(“score”)).over(w)) df2.show()\nspark.stop() ```",
+    "crumbs": [
+      "Assignments",
+      "Assignment 02"
+    ]
+  },
+  {
+    "objectID": "Assignment01/~$stem_info.html",
+    "href": "Assignment01/~$stem_info.html",
+    "title": "Connor Coulter",
+    "section": "",
+    "text": "\u000eConnor Coulter\u000eConnor Coulter"
+  }
+]
