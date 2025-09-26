@@ -8771,7 +8771,529 @@ drwxrwxr-x  2 ubuntu ubuntu 4.0K Sep 26 15:44  reports
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=f6e6652d-19fe-4eb9-871a-4aa79f047bcb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=f6e6652d-19fe-4eb9-871a-4aa79f047bcb">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] Converting notebook assignment03.ipynb to html
+[NbConvertApp] Writing 334631 bytes to assignment03.html
+-rw-rw-r-- 1 ubuntu ubuntu 327K Sep 26 16:56 assignment03.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=e63c6542-024a-4de3-9e60-fd15c53c1733">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=3633366a-7dfa-4907-8a96-a8dbd8acd764">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/coulterc-code.github.io
+[main 266c08a] Add Assignment 03 HTML without code
+ 1 file changed, 858 insertions(+), 3268 deletions(-)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.15 KiB | 322.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:coulterc-code/coulterc-code.github.io.git
+   40d07e5..266c08a  main -&gt; main
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=f0b6419a-6bf0-42a5-9f5b-20005ee84e0b">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] WARNING | pattern 'assignment03.ipynb' matched no files
+This application is used to convert notebook files (*.ipynb)
+        to various other formats.
+
+        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
+
+Options
+=======
+The options below are convenience aliases to configurable class-options,
+as listed in the "Equivalent to" description-line of the aliases.
+To see all configurable class-options for some &lt;cmd&gt;, use:
+    &lt;cmd&gt; --help-all
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+    Equivalent to: [--Application.log_level=10]
+--show-config
+    Show the application's configuration (human-readable format)
+    Equivalent to: [--Application.show_config=True]
+--show-config-json
+    Show the application's configuration (json format)
+    Equivalent to: [--Application.show_config_json=True]
+--generate-config
+    generate default config file
+    Equivalent to: [--JupyterApp.generate_config=True]
+-y
+    Answer yes to any questions instead of prompting.
+    Equivalent to: [--JupyterApp.answer_yes=True]
+--execute
+    Execute the notebook prior to export.
+    Equivalent to: [--ExecutePreprocessor.enabled=True]
+--allow-errors
+    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if '--execute' was specified, too.
+    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
+--stdin
+    read a single notebook file from stdin. Write the resulting notebook with default basename 'notebook.*'
+    Equivalent to: [--NbConvertApp.from_stdin=True]
+--stdout
+    Write notebook output to stdout instead of files.
+    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
+--inplace
+    Run nbconvert in place, overwriting the existing notebook (only
+            relevant when converting to notebook format)
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
+--clear-output
+    Clear output of current file and save in place,
+            overwriting the existing notebook.
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
+--coalesce-streams
+    Coalesce consecutive stdout and stderr outputs into one stream (within each cell).
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --CoalesceStreamsPreprocessor.enabled=True]
+--no-prompt
+    Exclude input and output prompts from converted document.
+    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
+--no-input
+    Exclude input cells and output prompts from converted document.
+            This mode is ideal for generating code-free reports.
+    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True --TemplateExporter.exclude_input_prompt=True]
+--allow-chromium-download
+    Whether to allow downloading chromium if no suitable version is found on the system.
+    Equivalent to: [--WebPDFExporter.allow_chromium_download=True]
+--disable-chromium-sandbox
+    Disable chromium security sandbox when converting to PDF..
+    Equivalent to: [--WebPDFExporter.disable_sandbox=True]
+--show-input
+    Shows code input. This flag is only useful for dejavu users.
+    Equivalent to: [--TemplateExporter.exclude_input=False]
+--embed-images
+    Embed the images as base64 dataurls in the output. This flag is only useful for the HTML/WebPDF/Slides exports.
+    Equivalent to: [--HTMLExporter.embed_images=True]
+--sanitize-html
+    Whether the HTML in Markdown cells and cell outputs should be sanitized..
+    Equivalent to: [--HTMLExporter.sanitize_html=True]
+--log-level=&lt;Enum&gt;
+    Set the log level by value or name.
+    Choices: any of [0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']
+    Default: 30
+    Equivalent to: [--Application.log_level]
+--config=&lt;Unicode&gt;
+    Full path of a config file.
+    Default: ''
+    Equivalent to: [--JupyterApp.config_file]
+--to=&lt;Unicode&gt;
+    The export format to be used, either one of the built-in formats
+            ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf']
+            or a dotted object name that represents the import path for an
+            ``Exporter`` class
+    Default: ''
+    Equivalent to: [--NbConvertApp.export_format]
+--template=&lt;Unicode&gt;
+    Name of the template to use
+    Default: ''
+    Equivalent to: [--TemplateExporter.template_name]
+--template-file=&lt;Unicode&gt;
+    Name of the template file to use
+    Default: None
+    Equivalent to: [--TemplateExporter.template_file]
+--theme=&lt;Unicode&gt;
+    Template specific theme(e.g. the name of a JupyterLab CSS theme distributed
+    as prebuilt extension for the lab template)
+    Default: 'light'
+    Equivalent to: [--HTMLExporter.theme]
+--sanitize_html=&lt;Bool&gt;
+    Whether the HTML in Markdown cells and cell outputs should be sanitized.This
+    should be set to True by nbviewer or similar tools.
+    Default: False
+    Equivalent to: [--HTMLExporter.sanitize_html]
+--writer=&lt;DottedObjectName&gt;
+    Writer class used to write the
+                                        results of the conversion
+    Default: 'FilesWriter'
+    Equivalent to: [--NbConvertApp.writer_class]
+--post=&lt;DottedOrNone&gt;
+    PostProcessor class used to write the
+                                        results of the conversion
+    Default: ''
+    Equivalent to: [--NbConvertApp.postprocessor_class]
+--output=&lt;Unicode&gt;
+    Overwrite base name use for output files.
+                Supports pattern replacements '{notebook_name}'.
+    Default: '{notebook_name}'
+    Equivalent to: [--NbConvertApp.output_base]
+--output-dir=&lt;Unicode&gt;
+    Directory to write output(s) to. Defaults
+                                  to output to the directory of each notebook. To recover
+                                  previous default behaviour (outputting to the current
+                                  working directory) use . as the flag value.
+    Default: ''
+    Equivalent to: [--FilesWriter.build_directory]
+--reveal-prefix=&lt;Unicode&gt;
+    The URL prefix for reveal.js (version 3.x).
+            This defaults to the reveal CDN, but can be any url pointing to a copy
+            of reveal.js.
+            For speaker notes to work, this must be a relative path to a local
+            copy of reveal.js: e.g., "reveal.js".
+            If a relative path is given, it must be a subdirectory of the
+            current directory (from which the server is run).
+            See the usage documentation
+            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
+            for more details.
+    Default: ''
+    Equivalent to: [--SlidesExporter.reveal_url_prefix]
+--nbformat=&lt;Enum&gt;
+    The nbformat version to write.
+            Use this to downgrade notebooks.
+    Choices: any of [1, 2, 3, 4]
+    Default: 4
+    Equivalent to: [--NotebookExporter.nbformat_version]
+
+Examples
+--------
+
+    The simplest way to use nbconvert is
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to html
+
+            Options include ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf'].
+
+            &gt; jupyter nbconvert --to latex mynotebook.ipynb
+
+            Both HTML and LaTeX support multiple output templates. LaTeX includes
+            'base', 'article' and 'report'.  HTML includes 'basic', 'lab' and
+            'classic'. You can specify the flavor of the format used.
+
+            &gt; jupyter nbconvert --to html --template lab mynotebook.ipynb
+
+            You can also pipe the output to stdout, rather than a file
+
+            &gt; jupyter nbconvert mynotebook.ipynb --stdout
+
+            PDF is generated via latex
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
+
+            You can get (and serve) a Reveal.js-powered slideshow
+
+            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
+
+            Multiple notebooks can be given at the command line in a couple of
+            different ways:
+
+            &gt; jupyter nbconvert notebook*.ipynb
+            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
+
+            or you can specify the notebooks list in a config file, containing::
+
+                c.NbConvertApp.notebooks = ["my_notebook.ipynb"]
+
+            &gt; jupyter nbconvert --config mycfg.py
+
+To see all available configurables, use `--help-all`.
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=c83cf29f-eada-453b-8550-a11fa5db93b7">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>ls: cannot access 'assignment03.html': No such file or directory
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=d758a971-638b-4a1a-bdf0-4b3a9ebf6f4f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=d6876ef5-b3fb-42a9-90b3-6f19d96442bd">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+  <span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[44]</span><span class="ansi-green-fg">, line 1</span>
+<span class="ansi-red-fg">    </span><span class="ansi-red-fg">./assignment-03-coulterc-code/assignment-03-coulterc-code/assignment03.ipynb</span>
+                 ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=f8e7c05e-6715-4653-8aae-bcd082c1b6e9">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[Errno 2] No such file or directory: './assignment-03-coulterc-code/assignment-03-coulterc-code'
+/home/ubuntu/coulterc-code.github.io
+/home/ubuntu/coulterc-code.github.io
+total 116K
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Sep 26 16:18 Assignment01
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Sep 26 16:18 Assignment02
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Sep 26 16:18 Assignment03
+-rw-rw-r-- 1 ubuntu ubuntu  304 Sep 26 16:18 README.md
+drwxrwxr-x 4 ubuntu ubuntu 4.0K Sep 26 16:18 _freeze
+-rw-rw-r-- 1 ubuntu ubuntu  473 Sep 26 16:18 _quarto.yml
+drwxrwxr-x 4 ubuntu ubuntu 4.0K Sep 26 16:18 _site
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Sep 26 16:18 a03
+-rw-rw-r-- 1 ubuntu ubuntu  21K Sep 26 16:18 about.html
+-rw-rw-r-- 1 ubuntu ubuntu   87 Sep 26 16:18 about.qmd
+-rw-rw-r-- 1 ubuntu ubuntu 1.2K Sep 26 16:18 about.qmd.save
+-rw-rw-r-- 1 ubuntu ubuntu  232 Sep 26 16:18 bump.txt
+drwxrwxr-x 7 ubuntu ubuntu 4.0K Sep 26 16:38 docs
+-rw-rw-r-- 1 ubuntu ubuntu   88 Sep 26 16:18 ec2-proof.txt
+-rw-rw-r-- 1 ubuntu ubuntu  21K Sep 26 16:18 index.html
+-rw-rw-r-- 1 ubuntu ubuntu  357 Sep 26 16:18 index.qmd
+-rw-rw-r-- 1 ubuntu ubuntu  181 Sep 26 16:18 projects.qmd
+-rw-rw-r-- 1 ubuntu ubuntu 2.7K Sep 26 16:18 requirements.txt
+-rw-rw-r-- 1 ubuntu ubuntu   17 Sep 26 16:18 styles.css
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=e8f3bcfe-37e6-4b0a-96cf-92a4724fdfde">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] WARNING | pattern 'assignment03.ipynb' matched no files
+This application is used to convert notebook files (*.ipynb)
+        to various other formats.
+
+        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
+
+Options
+=======
+The options below are convenience aliases to configurable class-options,
+as listed in the "Equivalent to" description-line of the aliases.
+To see all configurable class-options for some &lt;cmd&gt;, use:
+    &lt;cmd&gt; --help-all
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+    Equivalent to: [--Application.log_level=10]
+--show-config
+    Show the application's configuration (human-readable format)
+    Equivalent to: [--Application.show_config=True]
+--show-config-json
+    Show the application's configuration (json format)
+    Equivalent to: [--Application.show_config_json=True]
+--generate-config
+    generate default config file
+    Equivalent to: [--JupyterApp.generate_config=True]
+-y
+    Answer yes to any questions instead of prompting.
+    Equivalent to: [--JupyterApp.answer_yes=True]
+--execute
+    Execute the notebook prior to export.
+    Equivalent to: [--ExecutePreprocessor.enabled=True]
+--allow-errors
+    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if '--execute' was specified, too.
+    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
+--stdin
+    read a single notebook file from stdin. Write the resulting notebook with default basename 'notebook.*'
+    Equivalent to: [--NbConvertApp.from_stdin=True]
+--stdout
+    Write notebook output to stdout instead of files.
+    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
+--inplace
+    Run nbconvert in place, overwriting the existing notebook (only
+            relevant when converting to notebook format)
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
+--clear-output
+    Clear output of current file and save in place,
+            overwriting the existing notebook.
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
+--coalesce-streams
+    Coalesce consecutive stdout and stderr outputs into one stream (within each cell).
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --CoalesceStreamsPreprocessor.enabled=True]
+--no-prompt
+    Exclude input and output prompts from converted document.
+    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
+--no-input
+    Exclude input cells and output prompts from converted document.
+            This mode is ideal for generating code-free reports.
+    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True --TemplateExporter.exclude_input_prompt=True]
+--allow-chromium-download
+    Whether to allow downloading chromium if no suitable version is found on the system.
+    Equivalent to: [--WebPDFExporter.allow_chromium_download=True]
+--disable-chromium-sandbox
+    Disable chromium security sandbox when converting to PDF..
+    Equivalent to: [--WebPDFExporter.disable_sandbox=True]
+--show-input
+    Shows code input. This flag is only useful for dejavu users.
+    Equivalent to: [--TemplateExporter.exclude_input=False]
+--embed-images
+    Embed the images as base64 dataurls in the output. This flag is only useful for the HTML/WebPDF/Slides exports.
+    Equivalent to: [--HTMLExporter.embed_images=True]
+--sanitize-html
+    Whether the HTML in Markdown cells and cell outputs should be sanitized..
+    Equivalent to: [--HTMLExporter.sanitize_html=True]
+--log-level=&lt;Enum&gt;
+    Set the log level by value or name.
+    Choices: any of [0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']
+    Default: 30
+    Equivalent to: [--Application.log_level]
+--config=&lt;Unicode&gt;
+    Full path of a config file.
+    Default: ''
+    Equivalent to: [--JupyterApp.config_file]
+--to=&lt;Unicode&gt;
+    The export format to be used, either one of the built-in formats
+            ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf']
+            or a dotted object name that represents the import path for an
+            ``Exporter`` class
+    Default: ''
+    Equivalent to: [--NbConvertApp.export_format]
+--template=&lt;Unicode&gt;
+    Name of the template to use
+    Default: ''
+    Equivalent to: [--TemplateExporter.template_name]
+--template-file=&lt;Unicode&gt;
+    Name of the template file to use
+    Default: None
+    Equivalent to: [--TemplateExporter.template_file]
+--theme=&lt;Unicode&gt;
+    Template specific theme(e.g. the name of a JupyterLab CSS theme distributed
+    as prebuilt extension for the lab template)
+    Default: 'light'
+    Equivalent to: [--HTMLExporter.theme]
+--sanitize_html=&lt;Bool&gt;
+    Whether the HTML in Markdown cells and cell outputs should be sanitized.This
+    should be set to True by nbviewer or similar tools.
+    Default: False
+    Equivalent to: [--HTMLExporter.sanitize_html]
+--writer=&lt;DottedObjectName&gt;
+    Writer class used to write the
+                                        results of the conversion
+    Default: 'FilesWriter'
+    Equivalent to: [--NbConvertApp.writer_class]
+--post=&lt;DottedOrNone&gt;
+    PostProcessor class used to write the
+                                        results of the conversion
+    Default: ''
+    Equivalent to: [--NbConvertApp.postprocessor_class]
+--output=&lt;Unicode&gt;
+    Overwrite base name use for output files.
+                Supports pattern replacements '{notebook_name}'.
+    Default: '{notebook_name}'
+    Equivalent to: [--NbConvertApp.output_base]
+--output-dir=&lt;Unicode&gt;
+    Directory to write output(s) to. Defaults
+                                  to output to the directory of each notebook. To recover
+                                  previous default behaviour (outputting to the current
+                                  working directory) use . as the flag value.
+    Default: ''
+    Equivalent to: [--FilesWriter.build_directory]
+--reveal-prefix=&lt;Unicode&gt;
+    The URL prefix for reveal.js (version 3.x).
+            This defaults to the reveal CDN, but can be any url pointing to a copy
+            of reveal.js.
+            For speaker notes to work, this must be a relative path to a local
+            copy of reveal.js: e.g., "reveal.js".
+            If a relative path is given, it must be a subdirectory of the
+            current directory (from which the server is run).
+            See the usage documentation
+            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
+            for more details.
+    Default: ''
+    Equivalent to: [--SlidesExporter.reveal_url_prefix]
+--nbformat=&lt;Enum&gt;
+    The nbformat version to write.
+            Use this to downgrade notebooks.
+    Choices: any of [1, 2, 3, 4]
+    Default: 4
+    Equivalent to: [--NotebookExporter.nbformat_version]
+
+Examples
+--------
+
+    The simplest way to use nbconvert is
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to html
+
+            Options include ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf'].
+
+            &gt; jupyter nbconvert --to latex mynotebook.ipynb
+
+            Both HTML and LaTeX support multiple output templates. LaTeX includes
+            'base', 'article' and 'report'.  HTML includes 'basic', 'lab' and
+            'classic'. You can specify the flavor of the format used.
+
+            &gt; jupyter nbconvert --to html --template lab mynotebook.ipynb
+
+            You can also pipe the output to stdout, rather than a file
+
+            &gt; jupyter nbconvert mynotebook.ipynb --stdout
+
+            PDF is generated via latex
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
+
+            You can get (and serve) a Reveal.js-powered slideshow
+
+            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
+
+            Multiple notebooks can be given at the command line in a couple of
+            different ways:
+
+            &gt; jupyter nbconvert notebook*.ipynb
+            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
+
+            or you can specify the notebooks list in a config file, containing::
+
+                c.NbConvertApp.notebooks = ["my_notebook.ipynb"]
+
+            &gt; jupyter nbconvert --config mycfg.py
+
+To see all available configurables, use `--help-all`.
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=79321162-a7fe-4f99-9112-c5b0a90ee3e5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=077d5082-c3f3-44c7-8213-1b3f66810b30">
 </div>
 </main>
 </body>
