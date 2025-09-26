@@ -8290,7 +8290,867 @@ Resolving deltas: 100% (218/218), done.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=8de47c50-9725-4ff4-a60a-21e8bc922ff3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=8de47c50-9725-4ff4-a60a-21e8bc922ff3">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] WARNING | pattern 'assignment03.ipynb' matched no files
+This application is used to convert notebook files (*.ipynb)
+        to various other formats.
+
+        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
+
+Options
+=======
+The options below are convenience aliases to configurable class-options,
+as listed in the "Equivalent to" description-line of the aliases.
+To see all configurable class-options for some &lt;cmd&gt;, use:
+    &lt;cmd&gt; --help-all
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+    Equivalent to: [--Application.log_level=10]
+--show-config
+    Show the application's configuration (human-readable format)
+    Equivalent to: [--Application.show_config=True]
+--show-config-json
+    Show the application's configuration (json format)
+    Equivalent to: [--Application.show_config_json=True]
+--generate-config
+    generate default config file
+    Equivalent to: [--JupyterApp.generate_config=True]
+-y
+    Answer yes to any questions instead of prompting.
+    Equivalent to: [--JupyterApp.answer_yes=True]
+--execute
+    Execute the notebook prior to export.
+    Equivalent to: [--ExecutePreprocessor.enabled=True]
+--allow-errors
+    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if '--execute' was specified, too.
+    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
+--stdin
+    read a single notebook file from stdin. Write the resulting notebook with default basename 'notebook.*'
+    Equivalent to: [--NbConvertApp.from_stdin=True]
+--stdout
+    Write notebook output to stdout instead of files.
+    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
+--inplace
+    Run nbconvert in place, overwriting the existing notebook (only
+            relevant when converting to notebook format)
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
+--clear-output
+    Clear output of current file and save in place,
+            overwriting the existing notebook.
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
+--coalesce-streams
+    Coalesce consecutive stdout and stderr outputs into one stream (within each cell).
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --CoalesceStreamsPreprocessor.enabled=True]
+--no-prompt
+    Exclude input and output prompts from converted document.
+    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
+--no-input
+    Exclude input cells and output prompts from converted document.
+            This mode is ideal for generating code-free reports.
+    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True --TemplateExporter.exclude_input_prompt=True]
+--allow-chromium-download
+    Whether to allow downloading chromium if no suitable version is found on the system.
+    Equivalent to: [--WebPDFExporter.allow_chromium_download=True]
+--disable-chromium-sandbox
+    Disable chromium security sandbox when converting to PDF..
+    Equivalent to: [--WebPDFExporter.disable_sandbox=True]
+--show-input
+    Shows code input. This flag is only useful for dejavu users.
+    Equivalent to: [--TemplateExporter.exclude_input=False]
+--embed-images
+    Embed the images as base64 dataurls in the output. This flag is only useful for the HTML/WebPDF/Slides exports.
+    Equivalent to: [--HTMLExporter.embed_images=True]
+--sanitize-html
+    Whether the HTML in Markdown cells and cell outputs should be sanitized..
+    Equivalent to: [--HTMLExporter.sanitize_html=True]
+--log-level=&lt;Enum&gt;
+    Set the log level by value or name.
+    Choices: any of [0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']
+    Default: 30
+    Equivalent to: [--Application.log_level]
+--config=&lt;Unicode&gt;
+    Full path of a config file.
+    Default: ''
+    Equivalent to: [--JupyterApp.config_file]
+--to=&lt;Unicode&gt;
+    The export format to be used, either one of the built-in formats
+            ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf']
+            or a dotted object name that represents the import path for an
+            ``Exporter`` class
+    Default: ''
+    Equivalent to: [--NbConvertApp.export_format]
+--template=&lt;Unicode&gt;
+    Name of the template to use
+    Default: ''
+    Equivalent to: [--TemplateExporter.template_name]
+--template-file=&lt;Unicode&gt;
+    Name of the template file to use
+    Default: None
+    Equivalent to: [--TemplateExporter.template_file]
+--theme=&lt;Unicode&gt;
+    Template specific theme(e.g. the name of a JupyterLab CSS theme distributed
+    as prebuilt extension for the lab template)
+    Default: 'light'
+    Equivalent to: [--HTMLExporter.theme]
+--sanitize_html=&lt;Bool&gt;
+    Whether the HTML in Markdown cells and cell outputs should be sanitized.This
+    should be set to True by nbviewer or similar tools.
+    Default: False
+    Equivalent to: [--HTMLExporter.sanitize_html]
+--writer=&lt;DottedObjectName&gt;
+    Writer class used to write the
+                                        results of the conversion
+    Default: 'FilesWriter'
+    Equivalent to: [--NbConvertApp.writer_class]
+--post=&lt;DottedOrNone&gt;
+    PostProcessor class used to write the
+                                        results of the conversion
+    Default: ''
+    Equivalent to: [--NbConvertApp.postprocessor_class]
+--output=&lt;Unicode&gt;
+    Overwrite base name use for output files.
+                Supports pattern replacements '{notebook_name}'.
+    Default: '{notebook_name}'
+    Equivalent to: [--NbConvertApp.output_base]
+--output-dir=&lt;Unicode&gt;
+    Directory to write output(s) to. Defaults
+                                  to output to the directory of each notebook. To recover
+                                  previous default behaviour (outputting to the current
+                                  working directory) use . as the flag value.
+    Default: ''
+    Equivalent to: [--FilesWriter.build_directory]
+--reveal-prefix=&lt;Unicode&gt;
+    The URL prefix for reveal.js (version 3.x).
+            This defaults to the reveal CDN, but can be any url pointing to a copy
+            of reveal.js.
+            For speaker notes to work, this must be a relative path to a local
+            copy of reveal.js: e.g., "reveal.js".
+            If a relative path is given, it must be a subdirectory of the
+            current directory (from which the server is run).
+            See the usage documentation
+            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
+            for more details.
+    Default: ''
+    Equivalent to: [--SlidesExporter.reveal_url_prefix]
+--nbformat=&lt;Enum&gt;
+    The nbformat version to write.
+            Use this to downgrade notebooks.
+    Choices: any of [1, 2, 3, 4]
+    Default: 4
+    Equivalent to: [--NotebookExporter.nbformat_version]
+
+Examples
+--------
+
+    The simplest way to use nbconvert is
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to html
+
+            Options include ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf'].
+
+            &gt; jupyter nbconvert --to latex mynotebook.ipynb
+
+            Both HTML and LaTeX support multiple output templates. LaTeX includes
+            'base', 'article' and 'report'.  HTML includes 'basic', 'lab' and
+            'classic'. You can specify the flavor of the format used.
+
+            &gt; jupyter nbconvert --to html --template lab mynotebook.ipynb
+
+            You can also pipe the output to stdout, rather than a file
+
+            &gt; jupyter nbconvert mynotebook.ipynb --stdout
+
+            PDF is generated via latex
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
+
+            You can get (and serve) a Reveal.js-powered slideshow
+
+            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
+
+            Multiple notebooks can be given at the command line in a couple of
+            different ways:
+
+            &gt; jupyter nbconvert notebook*.ipynb
+            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
+
+            or you can specify the notebooks list in a config file, containing::
+
+                c.NbConvertApp.notebooks = ["my_notebook.ipynb"]
+
+            &gt; jupyter nbconvert --config mycfg.py
+
+To see all available configurables, use `--help-all`.
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=72f55d36-a7c4-43e7-a15f-b9b1a44bcbe9">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 26 16:17 a03
+drwxrwxr-x 2 ubuntu ubuntu 4096 Sep 26 16:19 docs
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=bf24f8da-32c2-4030-a72e-44d6ba816f4a">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] WARNING | pattern 'assignment03.ipynb' matched no files
+This application is used to convert notebook files (*.ipynb)
+        to various other formats.
+
+        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
+
+Options
+=======
+The options below are convenience aliases to configurable class-options,
+as listed in the "Equivalent to" description-line of the aliases.
+To see all configurable class-options for some &lt;cmd&gt;, use:
+    &lt;cmd&gt; --help-all
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+    Equivalent to: [--Application.log_level=10]
+--show-config
+    Show the application's configuration (human-readable format)
+    Equivalent to: [--Application.show_config=True]
+--show-config-json
+    Show the application's configuration (json format)
+    Equivalent to: [--Application.show_config_json=True]
+--generate-config
+    generate default config file
+    Equivalent to: [--JupyterApp.generate_config=True]
+-y
+    Answer yes to any questions instead of prompting.
+    Equivalent to: [--JupyterApp.answer_yes=True]
+--execute
+    Execute the notebook prior to export.
+    Equivalent to: [--ExecutePreprocessor.enabled=True]
+--allow-errors
+    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if '--execute' was specified, too.
+    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
+--stdin
+    read a single notebook file from stdin. Write the resulting notebook with default basename 'notebook.*'
+    Equivalent to: [--NbConvertApp.from_stdin=True]
+--stdout
+    Write notebook output to stdout instead of files.
+    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
+--inplace
+    Run nbconvert in place, overwriting the existing notebook (only
+            relevant when converting to notebook format)
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
+--clear-output
+    Clear output of current file and save in place,
+            overwriting the existing notebook.
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
+--coalesce-streams
+    Coalesce consecutive stdout and stderr outputs into one stream (within each cell).
+    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --CoalesceStreamsPreprocessor.enabled=True]
+--no-prompt
+    Exclude input and output prompts from converted document.
+    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
+--no-input
+    Exclude input cells and output prompts from converted document.
+            This mode is ideal for generating code-free reports.
+    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True --TemplateExporter.exclude_input_prompt=True]
+--allow-chromium-download
+    Whether to allow downloading chromium if no suitable version is found on the system.
+    Equivalent to: [--WebPDFExporter.allow_chromium_download=True]
+--disable-chromium-sandbox
+    Disable chromium security sandbox when converting to PDF..
+    Equivalent to: [--WebPDFExporter.disable_sandbox=True]
+--show-input
+    Shows code input. This flag is only useful for dejavu users.
+    Equivalent to: [--TemplateExporter.exclude_input=False]
+--embed-images
+    Embed the images as base64 dataurls in the output. This flag is only useful for the HTML/WebPDF/Slides exports.
+    Equivalent to: [--HTMLExporter.embed_images=True]
+--sanitize-html
+    Whether the HTML in Markdown cells and cell outputs should be sanitized..
+    Equivalent to: [--HTMLExporter.sanitize_html=True]
+--log-level=&lt;Enum&gt;
+    Set the log level by value or name.
+    Choices: any of [0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']
+    Default: 30
+    Equivalent to: [--Application.log_level]
+--config=&lt;Unicode&gt;
+    Full path of a config file.
+    Default: ''
+    Equivalent to: [--JupyterApp.config_file]
+--to=&lt;Unicode&gt;
+    The export format to be used, either one of the built-in formats
+            ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf']
+            or a dotted object name that represents the import path for an
+            ``Exporter`` class
+    Default: ''
+    Equivalent to: [--NbConvertApp.export_format]
+--template=&lt;Unicode&gt;
+    Name of the template to use
+    Default: ''
+    Equivalent to: [--TemplateExporter.template_name]
+--template-file=&lt;Unicode&gt;
+    Name of the template file to use
+    Default: None
+    Equivalent to: [--TemplateExporter.template_file]
+--theme=&lt;Unicode&gt;
+    Template specific theme(e.g. the name of a JupyterLab CSS theme distributed
+    as prebuilt extension for the lab template)
+    Default: 'light'
+    Equivalent to: [--HTMLExporter.theme]
+--sanitize_html=&lt;Bool&gt;
+    Whether the HTML in Markdown cells and cell outputs should be sanitized.This
+    should be set to True by nbviewer or similar tools.
+    Default: False
+    Equivalent to: [--HTMLExporter.sanitize_html]
+--writer=&lt;DottedObjectName&gt;
+    Writer class used to write the
+                                        results of the conversion
+    Default: 'FilesWriter'
+    Equivalent to: [--NbConvertApp.writer_class]
+--post=&lt;DottedOrNone&gt;
+    PostProcessor class used to write the
+                                        results of the conversion
+    Default: ''
+    Equivalent to: [--NbConvertApp.postprocessor_class]
+--output=&lt;Unicode&gt;
+    Overwrite base name use for output files.
+                Supports pattern replacements '{notebook_name}'.
+    Default: '{notebook_name}'
+    Equivalent to: [--NbConvertApp.output_base]
+--output-dir=&lt;Unicode&gt;
+    Directory to write output(s) to. Defaults
+                                  to output to the directory of each notebook. To recover
+                                  previous default behaviour (outputting to the current
+                                  working directory) use . as the flag value.
+    Default: ''
+    Equivalent to: [--FilesWriter.build_directory]
+--reveal-prefix=&lt;Unicode&gt;
+    The URL prefix for reveal.js (version 3.x).
+            This defaults to the reveal CDN, but can be any url pointing to a copy
+            of reveal.js.
+            For speaker notes to work, this must be a relative path to a local
+            copy of reveal.js: e.g., "reveal.js".
+            If a relative path is given, it must be a subdirectory of the
+            current directory (from which the server is run).
+            See the usage documentation
+            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
+            for more details.
+    Default: ''
+    Equivalent to: [--SlidesExporter.reveal_url_prefix]
+--nbformat=&lt;Enum&gt;
+    The nbformat version to write.
+            Use this to downgrade notebooks.
+    Choices: any of [1, 2, 3, 4]
+    Default: 4
+    Equivalent to: [--NotebookExporter.nbformat_version]
+
+Examples
+--------
+
+    The simplest way to use nbconvert is
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to html
+
+            Options include ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'qtpdf', 'qtpng', 'rst', 'script', 'slides', 'webpdf'].
+
+            &gt; jupyter nbconvert --to latex mynotebook.ipynb
+
+            Both HTML and LaTeX support multiple output templates. LaTeX includes
+            'base', 'article' and 'report'.  HTML includes 'basic', 'lab' and
+            'classic'. You can specify the flavor of the format used.
+
+            &gt; jupyter nbconvert --to html --template lab mynotebook.ipynb
+
+            You can also pipe the output to stdout, rather than a file
+
+            &gt; jupyter nbconvert mynotebook.ipynb --stdout
+
+            PDF is generated via latex
+
+            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
+
+            You can get (and serve) a Reveal.js-powered slideshow
+
+            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
+
+            Multiple notebooks can be given at the command line in a couple of
+            different ways:
+
+            &gt; jupyter nbconvert notebook*.ipynb
+            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
+
+            or you can specify the notebooks list in a config file, containing::
+
+                c.NbConvertApp.notebooks = ["my_notebook.ipynb"]
+
+            &gt; jupyter nbconvert --config mycfg.py
+
+To see all available configurables, use `--help-all`.
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=4f6c664d-7d6e-4bde-9c0f-866be2b422a6">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>total 0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=4c876f9d-5667-4b2c-a89f-e5539118b157">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/assignment-03-coulterc-code/Untitled1.ipynb
+/home/ubuntu/assignment-03-coulterc-code/assignment-03-coulterc-code/assignment03.ipynb
+/home/ubuntu/assignment-03-coulterc-code/assignment-03-coulterc-code/.ipynb_checkpoints/assignment03-checkpoint.ipynb
+/home/ubuntu/assignment-03-coulterc-code/Untitled.ipynb
+/home/ubuntu/assignment-03-coulterc-code/.ipynb_checkpoints/Untitled1-checkpoint.ipynb
+/home/ubuntu/assignment-03-coulterc-code/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+/home/ubuntu/.local/lib/python3.12/site-packages/notebook/bundler/tests/resources/empty.ipynb
+/home/ubuntu/.local/lib/python3.12/site-packages/nbclassic/bundler/tests/resources/empty.ipynb
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=778df684-af59-4e10-b29d-c74f9ac10066">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/assignment-03-coulterc-code/assignment-03-coulterc-code
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=03ae3af5-1f25-4d51-88db-67efc6557755">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] Converting notebook assignment03.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 4 image(s).
+[NbConvertApp] Writing 689306 bytes to docs/assignment03.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=e29b0e9d-70f0-4422-8a13-52d9421a1a12">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>total 676
+-rw-rw-r-- 1 ubuntu ubuntu 689390 Sep 26 16:20 assignment03.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=9768ff6b-bc17-4414-8728-3b45b11cfc44">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>fatal: destination path '/home/ubuntu/coulterc-code.github.io' already exists and is not an empty directory.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=e2224b05-4080-4c54-b20d-5ad94355e172">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=6e85eeac-5d97-415e-b021-a3c22ae1b56f">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/coulterc-code.github.io
+[main 0327b0e] Add Assignment 03 HTML
+ 1 file changed, 473 insertions(+), 1 deletion(-)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.50 KiB | 325.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:coulterc-code/coulterc-code.github.io.git
+   487a387..0327b0e  main -&gt; main
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=a1662c32-962e-4d76-80a4-c5e84f73d248">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/assignment-03-coulterc-code/assignment-03-coulterc-code
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=5e789e8e-b181-4ed2-b64a-a41a20b1a2c0">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/assignment-03-coulterc-code/assignment-03-coulterc-code
+total 13496
+-rw-rw-r--  1 ubuntu ubuntu        0 Sep 25 01:48 'Assignment03-Report - your-bu-username.docx'
+-rw-rw-r--  1 ubuntu ubuntu     1014 Sep 25 01:48  README.md
+-rw-rw-r--  1 ubuntu ubuntu      362 Sep 25 01:48  assignment03-your-bu-username.qmd
+-rw-rw-r--  1 ubuntu ubuntu 12196145 Sep 26 16:21  assignment03.ipynb
+drwxrwxr-x 11 ubuntu ubuntu     4096 Sep 26 16:10  coulterc-code.github.io
+drwxrwxr-x  2 ubuntu ubuntu     4096 Sep 26 15:54  data
+drwxrwxr-x  2 ubuntu ubuntu     4096 Sep 26 16:01  docs
+drwxrwxr-x  2 ubuntu ubuntu     4096 Sep 26 15:44  reports
+-rw-rw-r--  1 ubuntu ubuntu     3335 Sep 25 01:48  requirements.txt
+-rw-rw-r--  1 ubuntu ubuntu  1582354 Sep 26 15:39  salary_by_industry_employment_box.html
+-rw-rw-r--  1 ubuntu ubuntu     2775 Sep 26 15:41  salary_by_occupation_bubble.html
+-rw-rw-r--  1 ubuntu ubuntu     2264 Sep 26 15:39  salary_by_onet_bubble.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=345a3758-e292-4bee-a7c8-100b007c1575">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Selected Jupyter core packages...
+IPython          : 9.5.0
+ipykernel        : 6.30.1
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.8.1
+jupyter_server   : 2.17.0
+jupyterlab       : 4.4.8
+nbclient         : 0.10.2
+nbconvert        : 7.16.6
+nbformat         : 5.10.4
+notebook         : 7.4.6
+qtconsole        : not installed
+traitlets        : 5.14.3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=2239d2a8-a65a-489d-b800-7dbccea29492">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Quarto 1.8.24
+[✓] Checking environment information...
+      Quarto cache location: /home/ubuntu/.cache/quarto
+[✓] Checking versions of quarto binary dependencies...
+      Pandoc version 3.6.3: OK
+      Dart Sass version 1.87.0: OK
+      Deno version 2.3.1: OK
+      Typst version 0.13.0: OK
+[✓] Checking versions of quarto dependencies......OK
+[✓] Checking Quarto installation......OK
+      Version: 1.8.24
+      Path: /opt/quarto/bin
+
+[✓] Checking tools....................OK
+      TinyTeX: (not installed)
+      Chromium: (not installed)
+
+[✓] Checking LaTeX....................OK
+      Tex:  (not detected)
+
+[✓] Checking Chrome Headless....................OK
+      Chrome:  (not detected)
+
+[✓] Checking basic markdown render....OK2K
+
+[✓] Checking Python 3 installation....OK2K
+      Version: 3.12.3
+      Path: /home/ubuntu/assignment-03-coulterc-code/venv/bin/python3
+      Jupyter: 5.8.1
+      Kernels: python3, venv
+
+[✓] Checking Jupyter engine render....OK2K
+
+[✓] Checking R installation...........(None)
+
+      Unable to locate an installed version of R.
+      Install R from <span class="ansi-bold">https://cloud.r-project.org/</span>
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=7dc17b36-5412-4ad0-8359-be2abcef2f28">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Requirement already satisfied: notebook in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (7.4.6)
+Requirement already satisfied: nbconvert in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (7.16.6)
+Requirement already satisfied: jupyter-server&lt;3,&gt;=2.4.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from notebook) (2.17.0)
+Requirement already satisfied: jupyterlab-server&lt;3,&gt;=2.27.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from notebook) (2.27.3)
+Requirement already satisfied: jupyterlab&lt;4.5,&gt;=4.4.8 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from notebook) (4.4.8)
+Requirement already satisfied: notebook-shim&lt;0.3,&gt;=0.2 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from notebook) (0.2.4)
+Requirement already satisfied: tornado&gt;=6.2.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from notebook) (6.5.2)
+Requirement already satisfied: beautifulsoup4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (4.13.5)
+Requirement already satisfied: bleach!=5.0.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from bleach[css]!=5.0.0-&gt;nbconvert) (6.2.0)
+Requirement already satisfied: defusedxml in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (0.7.1)
+Requirement already satisfied: jinja2&gt;=3.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (3.1.6)
+Requirement already satisfied: jupyter-core&gt;=4.7 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (5.8.1)
+Requirement already satisfied: jupyterlab-pygments in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (0.3.0)
+Requirement already satisfied: markupsafe&gt;=2.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (3.0.2)
+Requirement already satisfied: mistune&lt;4,&gt;=2.0.3 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (3.1.4)
+Requirement already satisfied: nbclient&gt;=0.5.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (0.10.2)
+Requirement already satisfied: nbformat&gt;=5.7 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (5.10.4)
+Requirement already satisfied: packaging in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (25.0)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (1.5.1)
+Requirement already satisfied: pygments&gt;=2.4.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (2.19.2)
+Requirement already satisfied: traitlets&gt;=5.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbconvert) (5.14.3)
+Requirement already satisfied: webencodings in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from bleach!=5.0.0-&gt;bleach[css]!=5.0.0-&gt;nbconvert) (0.5.1)
+Requirement already satisfied: tinycss2&lt;1.5,&gt;=1.1.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from bleach[css]!=5.0.0-&gt;nbconvert) (1.4.0)
+Requirement already satisfied: platformdirs&gt;=2.5 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-core&gt;=4.7-&gt;nbconvert) (4.4.0)
+Requirement already satisfied: anyio&gt;=3.1.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (4.11.0)
+Requirement already satisfied: argon2-cffi&gt;=21.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (25.1.0)
+Requirement already satisfied: jupyter-client&gt;=7.4.4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (8.6.3)
+Requirement already satisfied: jupyter-events&gt;=0.11.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.12.0)
+Requirement already satisfied: jupyter-server-terminals&gt;=0.4.4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.5.3)
+Requirement already satisfied: prometheus-client&gt;=0.9 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.23.1)
+Requirement already satisfied: pyzmq&gt;=24 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (27.1.0)
+Requirement already satisfied: send2trash&gt;=1.8.2 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.8.3)
+Requirement already satisfied: terminado&gt;=0.8.3 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.18.1)
+Requirement already satisfied: websocket-client&gt;=1.7 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.8.0)
+Requirement already satisfied: async-lru&gt;=1.0.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (2.0.5)
+Requirement already satisfied: httpx&lt;1,&gt;=0.25.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.28.1)
+Requirement already satisfied: ipykernel!=6.30.0,&gt;=6.5.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (6.30.1)
+Requirement already satisfied: jupyter-lsp&gt;=2.0.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (2.3.0)
+Requirement already satisfied: setuptools&gt;=41.1.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (80.9.0)
+Requirement already satisfied: babel&gt;=2.10 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (2.17.0)
+Requirement already satisfied: json5&gt;=0.9.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (0.12.1)
+Requirement already satisfied: jsonschema&gt;=4.18.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (4.25.1)
+Requirement already satisfied: requests&gt;=2.31 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (2.32.5)
+Requirement already satisfied: fastjsonschema&gt;=2.15 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from nbformat&gt;=5.7-&gt;nbconvert) (2.21.2)
+Requirement already satisfied: soupsieve&gt;1.2 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from beautifulsoup4-&gt;nbconvert) (2.8)
+Requirement already satisfied: typing-extensions&gt;=4.0.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from beautifulsoup4-&gt;nbconvert) (4.15.0)
+Requirement already satisfied: idna&gt;=2.8 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from anyio&gt;=3.1.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (3.10)
+Requirement already satisfied: sniffio&gt;=1.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from anyio&gt;=3.1.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.3.1)
+Requirement already satisfied: argon2-cffi-bindings in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from argon2-cffi&gt;=21.1-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (25.1.0)
+Requirement already satisfied: certifi in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from httpx&lt;1,&gt;=0.25.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (2025.8.3)
+Requirement already satisfied: httpcore==1.* in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from httpx&lt;1,&gt;=0.25.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (1.0.9)
+Requirement already satisfied: h11&gt;=0.16 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from httpcore==1.*-&gt;httpx&lt;1,&gt;=0.25.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.16.0)
+Requirement already satisfied: comm&gt;=0.1.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.2.3)
+Requirement already satisfied: debugpy&gt;=1.6.5 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (1.8.17)
+Requirement already satisfied: ipython&gt;=7.23.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (9.5.0)
+Requirement already satisfied: matplotlib-inline&gt;=0.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.1.7)
+Requirement already satisfied: nest-asyncio&gt;=1.4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (1.6.0)
+Requirement already satisfied: psutil&gt;=5.7 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (7.1.0)
+Requirement already satisfied: attrs&gt;=22.2.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema&gt;=4.18.0-&gt;jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (25.3.0)
+Requirement already satisfied: jsonschema-specifications&gt;=2023.03.6 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema&gt;=4.18.0-&gt;jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (2025.9.1)
+Requirement already satisfied: referencing&gt;=0.28.4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema&gt;=4.18.0-&gt;jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (0.36.2)
+Requirement already satisfied: rpds-py&gt;=0.7.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema&gt;=4.18.0-&gt;jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (0.27.1)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-client&gt;=7.4.4-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (2.9.0.post0)
+Requirement already satisfied: python-json-logger&gt;=2.0.4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (3.3.0)
+Requirement already satisfied: pyyaml&gt;=5.3 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (6.0.3)
+Requirement already satisfied: rfc3339-validator in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.1.4)
+Requirement already satisfied: rfc3986-validator&gt;=0.1.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.1.1)
+Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from requests&gt;=2.31-&gt;jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (3.4.3)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from requests&gt;=2.31-&gt;jupyterlab-server&lt;3,&gt;=2.27.1-&gt;notebook) (2.5.0)
+Requirement already satisfied: ptyprocess in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from terminado&gt;=0.8.3-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (0.7.0)
+Requirement already satisfied: decorator in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (5.2.1)
+Requirement already satisfied: ipython-pygments-lexers in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (1.1.1)
+Requirement already satisfied: jedi&gt;=0.16 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.19.2)
+Requirement already satisfied: pexpect&gt;4.3 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (4.9.0)
+Requirement already satisfied: prompt_toolkit&lt;3.1.0,&gt;=3.0.41 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (3.0.52)
+Requirement already satisfied: stack_data in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.6.3)
+Requirement already satisfied: fqdn in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.5.1)
+Requirement already satisfied: isoduration in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (20.11.0)
+Requirement already satisfied: jsonpointer&gt;1.13 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (3.0.0)
+Requirement already satisfied: rfc3987-syntax&gt;=1.1.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.1.0)
+Requirement already satisfied: uri-template in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.3.0)
+Requirement already satisfied: webcolors&gt;=24.6.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (24.11.1)
+Requirement already satisfied: six&gt;=1.5 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from python-dateutil&gt;=2.8.2-&gt;jupyter-client&gt;=7.4.4-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.17.0)
+Requirement already satisfied: cffi&gt;=1.0.1 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from argon2-cffi-bindings-&gt;argon2-cffi&gt;=21.1-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (2.0.0)
+Requirement already satisfied: pycparser in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from cffi&gt;=1.0.1-&gt;argon2-cffi-bindings-&gt;argon2-cffi&gt;=21.1-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (2.23)
+Requirement already satisfied: parso&lt;0.9.0,&gt;=0.8.4 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from jedi&gt;=0.16-&gt;ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.8.5)
+Requirement already satisfied: wcwidth in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from prompt_toolkit&lt;3.1.0,&gt;=3.0.41-&gt;ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.2.14)
+Requirement already satisfied: lark&gt;=1.2.2 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from rfc3987-syntax&gt;=1.1.0-&gt;jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.3.0)
+Requirement already satisfied: arrow&gt;=0.15.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from isoduration-&gt;jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (1.3.0)
+Requirement already satisfied: executing&gt;=1.2.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from stack_data-&gt;ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (2.2.1)
+Requirement already satisfied: asttokens&gt;=2.1.0 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from stack_data-&gt;ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (3.0.0)
+Requirement already satisfied: pure-eval in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from stack_data-&gt;ipython&gt;=7.23.1-&gt;ipykernel!=6.30.0,&gt;=6.5.0-&gt;jupyterlab&lt;4.5,&gt;=4.4.8-&gt;notebook) (0.2.3)
+Requirement already satisfied: types-python-dateutil&gt;=2.8.10 in /home/ubuntu/assignment-03-coulterc-code/venv/lib/python3.12/site-packages (from arrow&gt;=0.15.0-&gt;isoduration-&gt;jsonschema[format-nongpl]&gt;=4.18.0-&gt;jupyter-events&gt;=0.11.0-&gt;jupyter-server&lt;3,&gt;=2.4.0-&gt;notebook) (2.9.0.20250822)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=e38667d2-375f-4f01-ae6f-10b6f54711c0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=e425acc3-dd83-449e-a9d1-b195bf754475">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] Converting notebook assignment03.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 4 image(s).
+[NbConvertApp] Writing 717513 bytes to docs/assignment03.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=62c35b6c-77fd-4bc6-9f29-cfd5fab54c67">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre><span class="ansi-red-intense-fg">ERROR: --output option cannot specify a relative or absolute path
+
+Stack trace:
+    at parseRenderFlags (file:///opt/quarto/bin/quarto.js:22938:19)
+    at _Command.actionHandler (file:///opt/quarto/bin/quarto.js:129720:23)
+    at _Command.execute (file:///opt/quarto/bin/quarto.js:9840:18)
+    at eventLoopTick (ext:core/01_core.js:178:7)
+    at async _Command.parseCommand (file:///opt/quarto/bin/quarto.js:9717:14)
+    at async quarto (file:///opt/quarto/bin/quarto.js:175522:5)
+    at async file:///opt/quarto/bin/quarto.js:175550:5
+    at async file:///opt/quarto/bin/quarto.js:175405:14
+    at async mainRunner (file:///opt/quarto/bin/quarto.js:175407:5)
+    at async file:///opt/quarto/bin/quarto.js:175543:3</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=3d5ce1bc-6074-4fca-831c-80c03e7b698c">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre><span class="ansi-red-intense-fg">ERROR: No valid input files passed to render
+
+Stack trace:
+    at _Command.actionHandler (file:///opt/quarto/bin/quarto.js:129762:11)
+    at eventLoopTick (ext:core/01_core.js:178:7)
+    at async _Command.execute (file:///opt/quarto/bin/quarto.js:9840:7)
+    at async _Command.parseCommand (file:///opt/quarto/bin/quarto.js:9717:14)
+    at async quarto (file:///opt/quarto/bin/quarto.js:175522:5)
+    at async file:///opt/quarto/bin/quarto.js:175550:5
+    at async file:///opt/quarto/bin/quarto.js:175405:14
+    at async mainRunner (file:///opt/quarto/bin/quarto.js:175407:5)
+    at async file:///opt/quarto/bin/quarto.js:175543:3</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=3a1bc59a-c793-4bc0-9714-6e3e674ffb2a">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>mv: cannot stat 'assignment03.html': No such file or directory
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=344532d3-ff5d-423c-aa30-6a9820226e87">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/home/ubuntu/assignment-03-coulterc-code/assignment-03-coulterc-code
+total 13500
+-rw-rw-r--  1 ubuntu ubuntu        0 Sep 25 01:48 'Assignment03-Report - your-bu-username.docx'
+-rw-rw-r--  1 ubuntu ubuntu     1014 Sep 25 01:48  README.md
+-rw-rw-r--  1 ubuntu ubuntu      362 Sep 25 01:48  assignment03-your-bu-username.qmd
+-rw-rw-r--  1 ubuntu ubuntu 12201781 Sep 26 16:23  assignment03.ipynb
+drwxrwxr-x 11 ubuntu ubuntu     4096 Sep 26 16:10  coulterc-code.github.io
+drwxrwxr-x  2 ubuntu ubuntu     4096 Sep 26 15:54  data
+drwxrwxr-x  2 ubuntu ubuntu     4096 Sep 26 16:01  docs
+drwxrwxr-x  2 ubuntu ubuntu     4096 Sep 26 15:44  reports
+-rw-rw-r--  1 ubuntu ubuntu     3335 Sep 25 01:48  requirements.txt
+-rw-rw-r--  1 ubuntu ubuntu  1582354 Sep 26 15:39  salary_by_industry_employment_box.html
+-rw-rw-r--  1 ubuntu ubuntu     2775 Sep 26 15:41  salary_by_occupation_bubble.html
+-rw-rw-r--  1 ubuntu ubuntu     2264 Sep 26 15:39  salary_by_onet_bubble.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=b18fdf3d-1843-419e-981a-15e2eac9a9bc">
 </div>
 </main>
 </body>
